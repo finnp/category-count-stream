@@ -20,3 +20,22 @@ countFood.write({bla: 'blub'})
 countFood.end()
 ```
 
+## CLI
+
+If you install it with `npm install category-count-stream -g`, there will
+be the `category-count` tool available.
+
+Given a file `food.ldjson`
+```
+{"food": "tofu"}
+{"food": "tofu"}
+{"food": "tofu"}
+{"food": "banana"}
+{"bla": "blub"}
+```
+
+This command will return the following:
+```
+$ category-count food < food.ldjson
+{"tofu":3,"banana":1,"missing":1}
+```
