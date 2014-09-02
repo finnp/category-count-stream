@@ -1,6 +1,6 @@
 {
   "name": "category-count-stream",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Writable object stream for getting percentages of categories",
   "main": "index.js",
   "bin": {
